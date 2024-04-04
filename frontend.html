@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OrderFood</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: serif;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 150px;
+            background-color: #ff7171;
+        }
+
+        .nav_item {
+            padding: 10px 30px;
+        }
+
+        .nav_item p {
+            font-weight: 600;
+            letter-spacing: 4px;
+        }
+
+        .icon_wrapper {
+            width: 50px;
+            padding: 10px;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            height: 100%;
+        }
+
+        .section_1 {
+            display: flex;
+            flex-grow: 1;
+        }
+
+        .section_1 section {
+            width: 50%;
+        }
+
+        .left {
+            padding: 0 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        button {
+            outline: none;
+            border: none;
+            cursor: pointer;
+            color: #FFFFFF;
+            font-weight: bold;
+            background-color: #ff7171;
+            padding: 10px 20px;
+        }
+@media only screen and (max-width: 600px) {
+body {
+    padding: 20px;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav_item {
+    padding: 10px 0;
+}
+
+.nav_item p {
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+.icon_wrapper {
+    width: 50px;
+    padding: 10px;
+}
+.section_0{
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+       
+    }
+.section_1 {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; 
+    overflow-y: auto; 
+}
+.section_1 section {
+    width: 100%;
+}
+.left {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(to right,#fbf3aa,#ffd0d3)
+}
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #ff7171;
+    padding: 10px 20px;
+}
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    body{
+        padding: 20px;
+    }
+    .icon_wrapper{
+        width: 50px;
+        padding: 10px;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px;
+        overflow-x: hidden; 
+        overflow-y: auto; 
+        }
+    .nav_item {
+        padding: 10px 30px;
+        height: 100vh;
+    }
+    .section_0{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .section_1 {
+        display: flex;
+        flex-direction: row;
+        overflow-x: hidden; 
+        overflow-y: auto; 
+   }
+    .section_1 section {
+        width: 100%;
+    }
+   .left {
+        padding: 0 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: linear-gradient(to right,#fbf3aa,#ffd0d3);
+    }
+    button {
+        padding: 10px 20px;
+    }
+}
+}
+</style>
+
+    <body>
+        <section style="display: flex; flex-direction: column; height: 100vh;">
+            <section class="section_0">
+                <nav>
+                    <div class="nav_item"><p><b> Home</b></p></div>
+                    <div class="nav_item"><p><b> Order</b></p></div>
+                    <div class="nav_item"><p><b> Food</b></p></div>
+                    <div class="nav_item"><p><b> Restaurant</b></p></div>
+                    <div class="nav_item"><p><b> Testimonials</b></p></div>
+                    <div class="nav_item"><p><b> Contact Us</b></p></div>
+                    <div class=""><div class="icon_wrapper"><img src="./menu-bar.png" alt=""></div></div>
+                </nav>
+            </section>
+
+            <section class="section_1">
+                <section class="left" style="background-image: linear-gradient(to right,#fbf3aa,#ffd0d3);">
+                    <div style="margin-bottom: 80px;"><p style="font-size: 40px; font-family: sans-serif;">LOREM IPSUM</p></div>
+                    <div style="margin-bottom: 80px;">
+                        <p style="font-family: sans-serif;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam non laudantium placeat voluptates hic at quasi sequi porro. Maxime atque omnis cum saepe in architecto a hic quidem tenetur voluptas.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam non laudantium placeat voluptates hic at quasi sequi porro. Maxime atque omnis cum saepe in architecto a hic quidem tenetur voluptas.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam non laudantium placeat voluptates hic at quasi sequi porro. Maxime atque omnis cum saepe in architecto a hic quidem tenetur voluptas.
+                        </p>
+                    </div>
+                    <div><button>CLICK ME</button></div>
+                </section>
+                <section class="right"><img src="./pexels-robin-stickel-70497.jpg" alt=""></section>
+            </section>
+        </section>
+        <section style="display: flex; flex-direction: column; height: 100vh;background: rgb(254,237,183);
+        background: linear-gradient(83deg, rgba(254,237,183,1) 0%, rgba(255,182,238,1) 100%);">
+            <section class="section_1" style="gap: 30px;">
+                <section class="right" style="padding: 100px 50px;">
+                    <div style="display: flex; gap: 30px;">
+                        <div style="display: flex; flex-direction: column; width: 50%; gap: 20px;">
+                            <div style="flex-grow: 1;">
+                                <img src="pexels-rachel-claire-6752433.jpg" style="object-fit: cover;aspect-ratio: 3/2;" alt="">
+                            </div>
+                            <div style="flex-grow: 1;">
+                                <img src="pexels-eva-bronzini-6141651.jpg" style="object-fit: cover;aspect-ratio: 3/2;" alt="">
+                            </div>
+                        </div>
+                        <div style="width: 50%;">
+                            <img src="pexels-mister-mister-3434523.jpg" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="left">
+                    <div style="width: 90%; padding: 15px; background-color: #ff7171;">
+                        <div style="margin-bottom: 30px;">
+                            <p style="font-family:  Deansgate; font-weight: bolder; font-size: larger;">
+                                LOREM IPSUM
+                        </div>
+                        <div style="margin-bottom: 30px;">
+                            <p style="font-size: 40px; letter-spacing: 10px; font-family: sans-serif;">
+                                <b>LOREM IPSUM SET ADMEIR</b>
+                            </p>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 10px; padding: 5px 0;">
+                            <div>
+                                <p style="font-family: sans-serif;">
+                                    Click
+                                </p>
+                            </div>
+                            <div style="width: 20px;">
+                                <img src="./icons8-arrow-30.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </body>
+
+</html>
